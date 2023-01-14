@@ -24,15 +24,18 @@ h5,
 h6 {
 margin: 0;
 }
-
+*/
 * {
 margin:0;
 padding:0;
 list-style:none;
 box-sizing:border-box;
 }
+ul{
+    margin: 0;
+    padding-left: 0 ;
+}
 
-*/
 li {
     list-style-type: none;
 }
@@ -56,6 +59,16 @@ a:focus {
     color:var(--text);
     background: var(--white); 
     cursor: pointer;
+    /*
+    width: 1440px;
+    */
+}
+.container{
+    width:1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0;
+    
 }
 .web {
     font-family: 'Raleway', sans-serif;
@@ -66,6 +79,8 @@ a:focus {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primary-brand);
+    text-decoration: none;
+    margin-right: ;
 }
 .studio {
     font-family: 'Raleway', sans-serif;
@@ -76,6 +91,13 @@ a:focus {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--dark);
+    text-decoration: none;
+    margin-right: ;
+}
+.header{
+    padding-bottom: 24px;
+    padding-top: 24px;
+    border-bottom: 1px solid var(--accent);
 }
 .header-item {
     font-family: var(--main-font);
@@ -84,6 +106,7 @@ a:focus {
     line-height: 1.5;
     color: var(--dark);
     letter-spacing: 0.02em;
+    
 }
 .header-item:hover {
     color: var(--text);
@@ -98,6 +121,7 @@ a:focus {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:var(--text);
+    
 }
 .header-contact a:hover {
     color:var(--primary-brand);
@@ -178,6 +202,7 @@ a:focus {
     font-weight: 700;
     line-height: 1.5;
     cursor: pointer;
+    display: flex;
 }
 .button-primary{
     font-family: var(--main-font);
@@ -228,15 +253,20 @@ a:focus {
     letter-spacing: 0.04em; 
     color: var(--white); 
     background: var(--dark); 
+    text-align:center;
+    padding: ;
+    
 }
 .solutions-text {
     font-family:var(--main-font);
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
-    
     letter-spacing: 0.02em;
     color: var(--white);
+    background: var(--dark); 
+    text-align:center;
+    
 }
 .effective-button{
     font-family: var(--main-font);
@@ -249,7 +279,14 @@ a:focus {
     cursor: pointer;
     border: 1px solid var(--primary-brand);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    border-radius: 4px;     
+    border-radius: 4px; 
+    
+    text-align:center;
+    width: 170px;
+    height: 51px;
+    left: 635px;
+    top: 432px;
+    
 }
 .effective-button:hover {
     background: var(--primary-brand);
@@ -273,6 +310,9 @@ a:focus {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark);
+    flex: none;
+order: 0;
+flex-grow: 0;
 }
 .hard-text { 
     font-family: var(--main-font);
@@ -281,6 +321,9 @@ a:focus {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:var(--text);
+    flex: none;
+order: 1;
+flex-grow: 0;
 }
 
 /*----WHAT ARE WE DOING----*/
@@ -310,9 +353,11 @@ a:focus {
     letter-spacing: 0.02em; 
 }
 .card-list {
+    
 }
 .card-item {
-    background: var(--white);  
+    background: var(--white);
+    
 }
 .card-name {
     font-family:var(--main-font);
