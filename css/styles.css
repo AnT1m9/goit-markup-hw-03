@@ -28,8 +28,8 @@ margin: 0;
 * {
 margin:0;
 padding:0;
-list-style:none;
-box-sizing:border-box;
+list-style: none;
+box-sizing: border-box;
 }
 ul{
     margin: 0;
@@ -49,6 +49,11 @@ a:hover {
 a:focus {
     color:var(--primary-brand);
 }
+img {
+    display: block;
+    min-width: ;
+    height: auto;
+}
 
 /*-----BODY-----*/
 
@@ -59,16 +64,39 @@ a:focus {
     color:var(--text);
     background: var(--white); 
     cursor: pointer;
-    /*
-    width: 1440px;
-    */
+    
+    padding: 120px;
 }
-.container{
-    width:1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+.container {
+    /*width:1158px;*/
+    padding-left: 156px;
+    padding-right: 156px;
     margin: 0;
     
+    
+    
+}
+
+.header {
+    padding:24px 0;
+    border-bottom: 1px solid var(--accent);
+    height:72px;
+    margin: 0;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    display: flex;
+    
+    
+}
+.header > .container{
+    display: flex;
+    align-items: center;
+}
+.header-logo{
+    margin-right: 77px;
+}
+.header-logo:hover{
+    text-decoration: underline;
 }
 .web {
     font-family: 'Raleway', sans-serif;
@@ -80,7 +108,7 @@ a:focus {
     text-transform: uppercase;
     color: var(--primary-brand);
     text-decoration: none;
-    margin-right: ;
+    
 }
 .studio {
     font-family: 'Raleway', sans-serif;
@@ -92,12 +120,9 @@ a:focus {
     text-transform: uppercase;
     color: var(--dark);
     text-decoration: none;
-    margin-right: ;
+
 }
-.header{
-    padding-bottom: 24px;
-    padding-top: 24px;
-    border-bottom: 1px solid var(--accent);
+.header-list{
 }
 .header-item {
     font-family: var(--main-font);
@@ -106,13 +131,21 @@ a:focus {
     line-height: 1.5;
     color: var(--dark);
     letter-spacing: 0.02em;
-    
+    display: inline-block;
+    margin-right: 40px;
 }
 .header-item:hover {
     color: var(--text);
+    text-decoration: underline;
 }
 .header-item:focus {
     color: var(--primary-brand);
+}
+.header-contact{
+    display: flex;
+    /*gap: 40px;*/
+    padding-left: 331px;
+    
 }
 .header-contact a {
     font-family: var(--main-font);
@@ -121,13 +154,19 @@ a:focus {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:var(--text);
+    text-decoration: none;
+    
     
 }
 .header-contact a:hover {
     color:var(--primary-brand);
+    text-decoration: underline;
 }
 .header-contact a:focus {
     color:var(--primary-brand);
+}
+.header-mail{
+    margin-right: 40px;
 }
 .header-link {
     color:var(--dark);
@@ -149,14 +188,22 @@ a:focus {
     line-height: 1.5;
     color: var(--accent);
     background: var(--dark);
+    padding-top: 100px;
+    padding-bottom: 100px;
+    
 }
-.footer-webstudio {
+.footer-logo {
     font-family:var(--main-font);
     font-style: normal;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: 0.02em;
+    padding-bottom: 16px;
+    
+}
+.footer-logo:hover{
+    text-decoration: underline;
 }
 .footer-web {
     font-family: 'Raleway', sans-serif;
@@ -168,6 +215,7 @@ a:focus {
     text-transform: uppercase;
     color: var(--primary-brand);
 }
+
 .footer-studio {
     font-family: 'Raleway', sans-serif;
     font-style: normal;
@@ -177,6 +225,18 @@ a:focus {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color:var(--white);
+}
+.footer-text{
+    font-family: var(--main-font);
+    font-style: normal;
+    font-weight: 400; 
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--accent);
+    background: var(--dark);
+    
+    width: 264px;
+    height: 72px;
 }
 
 /*-----Filters----*/
@@ -203,6 +263,16 @@ a:focus {
     line-height: 1.5;
     cursor: pointer;
     display: flex;
+    justify-content: space-between;
+    margin-top: 168px;
+    margin-bottom: 72px;
+    margin-left: 271px;
+    margin-right: 271px;
+    /*
+    align-items: center;
+text-align: center;
+letter-spacing: 0.04em;
+*/
 }
 .button-primary{
     font-family: var(--main-font);
@@ -214,6 +284,7 @@ a:focus {
     cursor: pointer;
     border: 1px solid var(--accent);
     border-radius: 4px;
+    padding: 12px 24px;
 }
 .button-primary:hover {
     color:var(--white);
@@ -233,6 +304,7 @@ a:focus {
     cursor:pointer;
     border:1px solid var(--accent);
     border-radius: 4px;
+    padding: 12px 24px;
 }
 .button-secondary:hover {
     color:var(--light);
@@ -254,8 +326,9 @@ a:focus {
     color: var(--white); 
     background: var(--dark); 
     text-align:center;
-    width: 1440px;
+    width: auto;
     height: 603px;
+    margin: 0;
     
 }
 .solutions-text {
@@ -267,12 +340,11 @@ a:focus {
     color: var(--white);
     background: var(--dark); 
     text-align:center;
-    padding-top: 192px;
-    
-    /*
-    padding-left: 474px;
-    padding-right: 474px;
-    */
+    padding: 192px 0 0 0 ;
+    margin-bottom: 48px;
+    min-width: 496px;
+    margin-left: auto;
+    margin-right: auto;
     
 
 
@@ -286,9 +358,12 @@ a:focus {
     color:var(--white);
     background:var(--primary-brand);
     cursor: pointer;
-    border: 1px solid var(--primary-brand);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    /*border: 1px solid var(--primary-brand);*/
+    border:none;
+    display: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px; 
+    min-width: 169px;
+
     
     text-align:center;
     
@@ -296,8 +371,6 @@ a:focus {
     height: 51px;
     left: 635px;
     top: 432px;
-    
-    margin: 0px 635px 194px 635px; 
     
 }
 .effective-button:hover {
@@ -309,11 +382,20 @@ a:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 .solutions-subtitle {
+    display:flex;
+    justify-content: space-evenly;
 }
 .solutions-list {
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 0;
+    padding-right: 0;
 }
 .solutions-item {
     background-color: var(--white);
+    margin:0 12px 8px 12px;
+    width: 264px;
 }
 .item-hard{
     font-family: var(--main-font);
@@ -322,9 +404,9 @@ a:focus {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: var(--dark);
-    flex: none;
-order: 0;
-flex-grow: 0;
+    margin-bottom: 8px;
+    width: 264px;
+
 }
 .hard-text { 
     font-family: var(--main-font);
@@ -333,19 +415,38 @@ flex-grow: 0;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:var(--text);
+    margin-bottom: 12px;
+    /*
     flex: none;
-order: 1;
-flex-grow: 0;
+    order: 1;
+    flex-grow: 0;
+    */
+
 }
 
 /*----WHAT ARE WE DOING----*/
-
+.section-doing{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
 .header-style {
     font-family:var(--main-font);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-    color:var(--dark)
+    color: var(--dark);
+    display:flex;
+    justify-content: space-evenly;
+    
+}
+.doing-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 72px px 120px 0px;
+    
+
+
 }
 .section-card {
     color:var(--dark);
@@ -355,6 +456,8 @@ flex-grow: 0;
 /*----TEAM----*/
 
 .section-card {
+    /*display:flex;*/
+    
 }
 .header-team {
     font-family:var(--main-font);
@@ -363,12 +466,31 @@ flex-grow: 0;
     line-height:1.1;
     color:var(--dark);
     letter-spacing: 0.02em; 
+    padding-top: 120px;
+    padding-bottom: 72px;
+    
+    display: flex;
+    justify-content: space-evenly;
+/*
+    position: absolute;
+width: 162px;
+height: 40px;
+left: 639px;
+top: 1671px;
+*/
 }
 .card-list {
-    
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 120px;
 }
 .card-item {
     background: var(--white);
+    
+}
+.card-people{
+    padding-top: 32px;
+    padding-bottom: 32px;
     
 }
 .card-name {
@@ -378,6 +500,7 @@ flex-grow: 0;
     font-size: 20px; 
     line-height: 1.2; 
     color:var(--dark);
+    padding-bottom: 8px;
 }
 .card-text {
     font-family:var(--main-font);
@@ -390,13 +513,21 @@ flex-grow: 0;
 /*-----PORTFOLIO-----*/
 
 .portfolio {
+    
 }
 .portfolio-list {
     background-color:var(--white);
+    
 }
 .portfolio-item {
     background-color:var(--white);
+    padding-bottom: 48px;
 }
+
+.card-portfolio {
+    
+}
+
 .portfolio-name{
     font-family:var(--main-font);
     font-weight: 700;
