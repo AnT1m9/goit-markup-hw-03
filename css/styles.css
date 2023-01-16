@@ -254,7 +254,8 @@ a:focus {
     color: var(--white); 
     background: var(--dark); 
     text-align:center;
-    padding: ;
+    width: 1440px;
+    height: 603px;
     
 }
 .solutions-text {
@@ -266,7 +267,15 @@ a:focus {
     color: var(--white);
     background: var(--dark); 
     text-align:center;
+    padding-top: 192px;
     
+    /*
+    padding-left: 474px;
+    padding-right: 474px;
+    */
+    
+
+
 }
 .effective-button{
     font-family: var(--main-font);
@@ -282,10 +291,13 @@ a:focus {
     border-radius: 4px; 
     
     text-align:center;
+    
     width: 170px;
     height: 51px;
     left: 635px;
     top: 432px;
+    
+    margin: 0px 635px 194px 635px; 
     
 }
 .effective-button:hover {
