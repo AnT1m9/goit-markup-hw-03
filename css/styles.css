@@ -415,7 +415,7 @@ letter-spacing: 0.04em;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color:var(--text);
-    margin-bottom: 12px;
+    gap:24px;
     /*
     flex: none;
     order: 1;
@@ -428,6 +428,7 @@ letter-spacing: 0.04em;
 .section-doing{
     display: flex;
     justify-content: space-evenly;
+    gap: 24px;
     
 }
 .header-style {
@@ -443,7 +444,7 @@ letter-spacing: 0.04em;
 .doing-list{
     display: flex;
     justify-content: space-between;
-    margin: 72px px 120px 0px;
+    margin: 72px 0px 120px 0px;
     
 
 
